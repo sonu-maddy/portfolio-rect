@@ -4,6 +4,7 @@ import logo from './assets/html_7456922.png';
 import PopUp from './PopUp';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+
 export default function NavBar() {
 
   const [showPopUp, setShowPopUp] = useState(false);

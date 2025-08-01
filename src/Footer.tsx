@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function Footer() {
   return (
     <footer className="w-full h-1 mt-12 text-gray-400">
