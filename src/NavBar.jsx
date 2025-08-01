@@ -1,11 +1,9 @@
 
-import 'tailwindcss'
+
 import logo from './assets/html_7456922.png';
 import PopUp from './PopUp';
 import React, { useState } from 'react';
-
-
-
+import { Link } from 'react-router-dom';
 export default function NavBar() {
 
   const [showPopUp, setShowPopUp] = useState(false);
@@ -27,7 +25,8 @@ export default function NavBar() {
   };
 
   return (
-    <>    <div className="fixed top-0 left-0 right-0 border-spacing-y-20 h-16 z-10 shadow-lg">
+    <>   
+     <div className="fixed top-0 left-0 right-0 border-spacing-y-20 h-16 z-10 shadow-lg">
       <div className="container  flex justify-items-center items-center h-full">
 
         <div className=' text-amber-900 text-[20px] font-bold'>
@@ -40,7 +39,7 @@ export default function NavBar() {
         <div className="nav-items">
           <ul className="flex gap-6">
             <li className="text-white hover:text-amber-700 cursor-pointer">Home</li>
-            <li className="text-white hover:text-amber-700 cursor-pointer">About</li>
+            <li><Link to="/about" className="text-white hover:text-amber-700">About</Link></li>
             <li className="text-white  hover:text-amber-700 cursor-pointer">Skills</li>
             <li className="text-white  hover:text-amber-700 cursor-pointer">Projects</li>
             <li className="text-white  hover:text-amber-700 stroke-amber-600 cursor-pointer">Contact</li>
@@ -51,7 +50,7 @@ export default function NavBar() {
         <div className="resume flex justify-end items-center">
           <button
             onClick={downResume}
-            className="text-white max-w-70 text-[20px] px-2 py-2 rounded hover:text-amber-900 hover:bg-blend-screen hover:border-b-2 cursor-pointer">
+            className="text-white max-w-70 text-[20px] px-2 py-2 rounded hover:text-amber-800 hover:bg-blend-screen  cursor-pointer">
             Resume
           </button>
         </div>

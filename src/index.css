@@ -1,4 +1,12 @@
-@import "tailwindcss";
+
+/* tailwind.css or index.css */
+/* src/index.css */
+@import "@tailwindcss/preflight";
+@tailwind utilities;
+
+
+
+
 
 .glow {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.6),

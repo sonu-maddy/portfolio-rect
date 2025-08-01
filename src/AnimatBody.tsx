@@ -1,6 +1,6 @@
 import "./style.css";
 import { useRef } from "react";
-import tailwindcss from "@tailwindcss/vite";
+import 'tailwindcss';
 import React, { useState } from "react";
 
 import {
@@ -100,8 +100,8 @@ export default function App() {
   return (
     <>
       <div className="absolute top-24 w-full  items-center px-4 text-center animate-fade-in z-30">
-        <h1 className="text-3xl md:text-6xl font-bold text-white bg-black/40 px-6 py-4 rounded-xl  glow">
-          &quot; &#123; Sonu Maddheshiya &#125; &quot;
+        <h1 className="text-3xl md:text-6xl font-bold text-amber-100 bg-black/40 px-6 py-4 rounded-xl opacity-60 ">
+          &quot; &#123; Build Thinking - Grow Together &#125; &quot;
         </h1>
         <p className="mt-3 text-lg md:text-2xl text-slate-200 font-light animate-slide-up">
           Developer. Dreamer. Doer.
