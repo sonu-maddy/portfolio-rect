@@ -39,11 +39,11 @@ export default function NavBar() {
 
         <div className="nav-items">
           <ul className="flex gap-6">
-            <li className="text-white hover:text-amber-700 cursor-pointer">Home</li>
-            <li><Link to="/about" className="text-white hover:text-amber-700">About</Link></li>
-            <li className="text-white  hover:text-amber-700 cursor-pointer">Skills</li>
-            <li className="text-white  hover:text-amber-700 cursor-pointer">Projects</li>
-            <li className="text-white  hover:text-amber-700 stroke-amber-600 cursor-pointer">Contact</li>
+            <li><Link to="/about" className="text-white hover:text-amber-700">Home</Link></li>
+            <li><Link to="/about" className="text-white hover:text-amber-700">About Us</Link></li>
+            <li><Link to="/about" className="text-white hover:text-amber-700">Skills</Link></li>
+            <li><Link to="/about" className="text-white hover:text-amber-700">Project </Link></li>
+            <li><Link to="/about" className="text-white hover:text-amber-700">Contact</Link></li>
           </ul>
         </div>
 
