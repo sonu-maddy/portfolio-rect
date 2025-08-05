@@ -1,10 +1,9 @@
-
 /* tailwind.css or index.css */
 /* src/index.css */
 /* src/index.css */
-@tailwind base;
-@tailwind components;
+
 @tailwind utilities;
+
 
 
 
