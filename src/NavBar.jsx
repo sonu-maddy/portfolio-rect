@@ -5,6 +5,7 @@ import PopUp from './PopUp';
 import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
 
+
 export default function NavBar() {
   const [showPopUp, setShowPopUp] = useState(false);
 

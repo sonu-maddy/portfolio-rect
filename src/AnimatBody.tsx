@@ -1,6 +1,6 @@
 import "./style.css";
 import { useRef } from "react";
-import 'tailwindcss';
+
 import './index.css';
 import React, { useState } from "react";
 
