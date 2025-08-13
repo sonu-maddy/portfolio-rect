@@ -9,6 +9,7 @@ import Home from "./pages/Home.jsx";
 import Skills from "./pages/Skills.tsx";
 import Contact from "./pages/Contact.tsx";
 import Project from "./pages/Project.tsx";
+import './index.css';
 
 
 export default function App() {

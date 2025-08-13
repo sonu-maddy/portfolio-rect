@@ -4,7 +4,7 @@ import logo from './assets/html_7456922.png';
 import PopUp from './PopUp';
 import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
-
+import './index.css';
 
 export default function NavBar() {
   const [showPopUp, setShowPopUp] = useState(false);
