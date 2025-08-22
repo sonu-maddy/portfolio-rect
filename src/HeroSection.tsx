@@ -14,12 +14,6 @@ export default function HeroSection() {
   );
 }
 
-interface CardProps {
-  emoji: string;
-  hueA: number;
-  hueB: number;
-  i: number;
-}
 
 const heroContainer: React.CSSProperties = {
   width: "100%",

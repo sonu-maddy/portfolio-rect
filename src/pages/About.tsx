@@ -8,6 +8,7 @@ export default function About() {
     <div style={aboutsectiion}>
        
        <NavBar />
+       <h1>About</h1>
 
     </div>
   )

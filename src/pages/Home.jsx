@@ -7,15 +7,11 @@ import Footer from "../Footer.tsx";
 import "../index.css";
 
 
+
 export default function Home() {
   return (
     <>
-      
-     
-      <AnimateBody />
-      <HeroSection />
-
-    
+       
     </>
   );
 }

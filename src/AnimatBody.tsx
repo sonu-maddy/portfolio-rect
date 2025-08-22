@@ -1,8 +1,7 @@
 import "./style.css";
-import { useRef } from "react";
 
 import './index.css';
-import React, { useState } from "react";
+import React, { useRef,useState } from "react";
 
 import {
   motion,
@@ -47,7 +46,7 @@ function ParallaxText({ children, baseVelocity = 1 }: ParallaxProps) {
     offset: ["start end", "end start"], // animate from visible to out
   });
 
-  const opacity = useTransform(scrollYProgress, [0.6, 0, 1, 1], [0, 0.3, 0, 1]);
+  const opacity = useTransform(scrollYProgress, [0.5, 0, 1, 1], [0, 0.2, 0, 1]);
   const scale = useTransform(
     scrollYProgress,
     [0, 0.2, 0.8, 1],
@@ -100,11 +99,11 @@ function ParallaxText({ children, baseVelocity = 1 }: ParallaxProps) {
 export default function App() {
   return (
     <>
-      <div className="absolute top-24 w-full  items-center px-4 text-center animate-fade-in z-30">
+      <div className="absolute mt-36 w-full  items-center px-4 text-center animate-fade-in z-30">
         <h1 className="text-3xl md:text-6xl font-bold text-amber-100 bg-black/40 px-6 py-4 rounded-xl opacity-60 ">
           &quot; &#123; Build Thinking - Grow Together &#125; &quot;
         </h1>
-        <p className="mt-3 text-lg md:text-2xl text-slate-200 font-light animate-slide-up">
+        <p className="mt-3 text-lg md:text-xl text-stone-300 font-light animate-slide-up">
           Developer. Dreamer. Doer.
         </p>
       </div>
