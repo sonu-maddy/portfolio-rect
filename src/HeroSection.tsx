@@ -1,19 +1,24 @@
 import * as motion from "motion/react-client";
 import type { Variants } from "motion/react";
+import React from "react";
+import image2 from "./assets/image2.png";
 
 export default function HeroSection() {
   return (
-    <div style={heroContainer}>
-      <h1 style={heading}>Welcome to My Working Set-Up</h1>
-      <p style={subheading}>Explore creative and logic-powered Development</p>
+    <div className="hero-section" style={heroContainer}>
+      
+      <div>
+        <div>
+          <h1 style={heading}>Welcome to My Working Set-Up</h1>
+          <p style={subheading}>
+            Explore creative and logic-powered Development
+          </p>
+        </div>
 
-      <div style={cardsWrapper}>
-        
       </div>
     </div>
   );
 }
-
 
 const heroContainer: React.CSSProperties = {
   width: "100%",
@@ -21,6 +26,8 @@ const heroContainer: React.CSSProperties = {
   textAlign: "center",
   background: "linear-gradient(to bottom, #0f0f0f, #1c1c1c)",
   color: "#fff",
+  marginTop: "120px",
+  
 };
 
 const heading: React.CSSProperties = {
@@ -34,18 +41,5 @@ const subheading: React.CSSProperties = {
   color: "#ccc",
   marginBottom: "60px",
 };
-
-const cardsWrapper: React.CSSProperties = {
-  display: "flex",
-  flexWrap: "wrap",
-  justifyContent: "center",
-  gap: "40px",
-};
-
-
-
-
-
-
 
 

@@ -21,11 +21,11 @@ export default function NavBar() {
 
   return (
     <>
-      <div className="fixed top-4 left-0 right-0 border-spacing-y-20 h-16 z-10 shadow-lg">
+      <div className="nav-sec fixed top-5 left-0 right-0 h-16 z-50 shadow-lg bg-black/70 backdrop-blur-xl">
         <div className="container flex justify-between items-center h-full px-4">
 
-          <div className="text-orange-500 text-[30px] font-bold">
-            <h1 onClick={handlePopUp} className="cursor-pointer">S</h1>
+          <div>
+            <h1 onClick={handlePopUp} className="cursor-pointer name">Let's Connect</h1>
           </div>
 
           <div className="nav-items">

@@ -1,7 +1,7 @@
 import "./style.css";
 
-import './index.css';
-import React, { useRef,useState } from "react";
+import "./index.css";
+import React, { useRef, useState } from "react";
 
 import {
   motion,
@@ -99,19 +99,23 @@ function ParallaxText({ children, baseVelocity = 1 }: ParallaxProps) {
 export default function App() {
   return (
     <>
-      <div className="absolute mt-36 w-full  items-center px-4 text-center animate-fade-in z-30">
-        <h1 className="text-3xl md:text-6xl font-bold text-amber-100 bg-black/40 px-6 py-4 rounded-xl opacity-60 ">
-          &quot; &#123; Build Thinking - Grow Together &#125; &quot;
-        </h1>
-        <p className="mt-3 text-lg md:text-xl text-stone-300 font-light animate-slide-up">
-          Developer. Dreamer. Doer.
-        </p>
-      </div>
+      <div className="bg-img bg-fixed h-screen w-full  relative">
+        <div className="absolute mt-36 w-full  items-center px-4 text-center animate-fade-in z-30">
+          <h1 className="text-3xl md:text-6xl font-bold text-white bg-black/40 px-6 py-4 rounded-xl opacity-70 ">
+            &quot; &#123; Build Thinking - Grow Together &#125; &quot;
+          </h1>
+          <p className="mt-3 text-lg md:text-xl text-stone-400 font-light animate-slide-up">
+            Developer. Dreamer. Doer.
+          </p>
+        </div>
 
-      <section>
-        <ParallaxText baseVelocity={-5}>learner & creative things</ParallaxText>
-        <ParallaxText baseVelocity={5}>logic and UI</ParallaxText>
-      </section>
+        <section>
+          <ParallaxText baseVelocity={-5}>
+            learner & creative things
+          </ParallaxText>
+          <ParallaxText baseVelocity={5}>logic and UI</ParallaxText>
+        </section>
+      </div>
     </>
   );
 }
