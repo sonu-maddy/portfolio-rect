@@ -5,10 +5,6 @@ import { NavLink } from "react-router-dom";
 import './index.css';
 
 export default function NavBar() {
-  const [showPopUp, setShowPopUp] = useState(false);
-
-  const handlePopUp = () => setShowPopUp(true);
-  const closePopUp = () => setShowPopUp(false);
 
   const downResume = () => {
     const link = document.createElement("a");
@@ -21,16 +17,16 @@ export default function NavBar() {
 
   return (
     <>
-      <div className="nav-sec fixed top-5 left-0 right-0 h-16 z-50 shadow-lg bg-black/70 backdrop-blur-xl">
+      <div className="fixed top-0 left-0 right-0 h-16 z-[9999] bg-black/70 backdrop-blur-xl shadow-lg">
         <div className="container flex justify-between items-center h-full px-4">
 
           <div>
-            <h1 onClick={handlePopUp} className="cursor-pointer name">Let's Connect</h1>
+            <h1 className="cursor-pointer name">Let's Connect</h1>
           </div>
 
           <div className="nav-items">
             <ul className="flex gap-6">
-              <li><NavLink to="/home" className={({ isActive }) =>
+              <li><NavLink to="/" className={({ isActive }) =>
                 isActive ? "text-amber-700 font-bold" : "text-white hover:text-amber-700"}>Home</NavLink></li>
               <li><NavLink to="/skills" className="text-white hover:text-amber-700">Skills</NavLink></li>
               <li><NavLink to="/project" className="text-white hover:text-amber-700">Project</NavLink></li>
@@ -49,7 +45,7 @@ export default function NavBar() {
         </div>
       </div>
 
-      {showPopUp && <PopUp onClose={closePopUp} />}
+
     </>
   );
 }
