@@ -2,7 +2,7 @@
   font-family: "Plaster", sans-serif;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
-  width: 100%;
+  /* width: 100%; */
 }
 
 
@@ -29,7 +29,7 @@ body {
   background-size: 100% auto;    /* ✅ Full width, proportional height */
   margin: 0;
   padding: 0;        /* ✅ Keeps full image in view */
-  filter: grayscale(100%); 
+  /* filter: grayscale(100%);  */
  
 
 /* hero section style */
@@ -40,6 +40,7 @@ body {
   padding: 0;
   background-color: var(--background);
   color: var(--accent);
+  padding-top: 64px;
  
 }
 
@@ -49,7 +50,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1,
+
 h2,
 h3 {
   font-family: sofia-pro, sans-serif;
@@ -57,14 +58,14 @@ h3 {
   font-style: normal;
 }
 
-h1 {
+/* h1 {
   font-size: 36px;
   font-weight: 600;
   letter-spacing: -1px;
   line-height: 1.2;
   text-align: center;
   margin: 100px 0 40px;
-}
+} */
 
 h2 {
   font-weight: 400;
@@ -139,18 +140,8 @@ code {
   background: var(--background);
 }
 
-html {
-  scroll-snap-type: y mandatory;
-}
 
-h1 {
-  font-size: 56px;
-  font-weight: 600;
-  letter-spacing: -3px;
-  line-height: 1.2;
-  text-align: center;
-  margin: 100px 0;
-}
+
 
 h2 {
   margin: 0;
@@ -212,3 +203,4 @@ img {
   display: block;
   margin-right: 30px;
 }
+

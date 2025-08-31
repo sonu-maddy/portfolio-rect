@@ -3,6 +3,7 @@ import NavBar from "./NavBar";
 import "./index.css";
 import React, { useRef, useState } from "react";
 
+
 import {
   motion,
   useScroll,
@@ -99,11 +100,10 @@ function ParallaxText({ children, baseVelocity = 1 }: ParallaxProps) {
 export default function App() {
   return (
     <>
-
-      <div className="fixed">
+      {/* <div className="fixed">
         <NavBar/>
-      </div>
-      
+      </div> */}
+
       <div className="bg-img bg-fixed h-screen w-full  relative">
         <div className="absolute mt-36 w-full  items-center px-4 text-center animate-fade-in z-30">
           <h1 className="text-3xl md:text-6xl font-bold text-white bg-black/40 px-6 py-4 rounded-xl opacity-70 ">
