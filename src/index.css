@@ -9,26 +9,6 @@
 /* @import "tailwindcss"; */
 
 
-.glow {
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6),
-    0 0 20px rgba(167, 220, 231, 0.5), 0 0 30px rgba(44, 54, 56, 0.4);
-}
-
-.bg-img {
-  height: 100vh;
-  background: 
-    url("./assets/image1.png") no-repeat center/cover,
-    linear-gradient(to top, #0e1628, #000004); /* from-gray-900 to-black */
-  background-blend-mode: luminosity;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.hero-section {
-  height: 150vh;
-  padding: 0 40px;
-}
 
 
 

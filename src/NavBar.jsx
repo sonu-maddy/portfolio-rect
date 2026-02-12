@@ -1,12 +1,16 @@
-
-import React, { useState } from 'react';
+import React from "react";
 import { NavLink } from "react-router-dom";
-import './index.css';
 
 export default function NavBar() {
-  const downResume = () => {
+  const navStyle = ({ isActive }) =>
+    isActive
+      ? "text-blue-600 font-semibold"
+      : "text-black hover:text-gray-500";
+
+  // ✅ Resume download handler
+  const downloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/SonuResume.pdf";
+    link.href = "./SonuResume.pdf";
     link.download = "Sonu_Maddheshiya_Resume.pdf";
     document.body.appendChild(link);
     link.click();
@@ -14,36 +18,38 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full h-16 z-[9999] bg-gradient-to-b from-gray-900 to-black border-b-4 border-white backdrop-blur-xl shadow-lg">
-      <div className="container flex justify-between items-center h-full px-4">
-        <div>
-          <h1 className="text-white font-bold ml-8">Sonu Maddheshiya...</h1>
-        </div>
+    <nav className="fixed top-0 left-0 w-full h-16 z-[9999] bg-white/70 backdrop-blur shadow-sm">
 
-        <ul className="flex gap-6">
+      <div className="max-w-7xl mx-auto flex justify-between items-center h-full px-4">
+
+        {/* Logo */}
+        <h1 className="font-bold text-black">
+          Sonu Maddheshiya
+        </h1>
+
+        {/* Navigation */}
+        <ul className="hidden md:flex gap-6">
           <li>
-            <NavLink to="/" className="text-white hover:text-gray-500">Home</NavLink>
+            <NavLink to="/" className={navStyle}>Home</NavLink>
           </li>
+
           <li>
-            <NavLink to="/skills" className="text-white hover:text-gray-500">Skills</NavLink>
+            <NavLink to="/about" className={navStyle}>About</NavLink>
           </li>
+
           <li>
-            <NavLink to="/project" className="text-white hover:text-gray-500">Project</NavLink>
-          </li>
-          <li>
-            <NavLink to="/about" className="text-white hover:text-gray-500">About</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact" className="text-white hover:text-gray-500">Contact</NavLink>
+            <NavLink to="/project" className={navStyle}>Projects</NavLink>
           </li>
         </ul>
 
+        {/* Resume Download */}
         <button
-          onClick={downResume}
-          className="text-white text-[16px] px-3 py-1 rounded hover:text-gray-500 cursor-pointer mr-8"
+          onClick={downloadResume}
+          className="hidden md:block text-black hover:text-gray-500 font-medium"
         >
-          Resume
+          Download Resume
         </button>
+
       </div>
     </nav>
   );
