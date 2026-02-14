@@ -10,7 +10,7 @@ export default function NavBar() {
   // ✅ Resume download handler
   const downloadResume = () => {
     const link = document.createElement("a");
-    link.href = "./SonuResume.pdf";
+    link.href = "Sonu Resume Java";
     link.download = "Sonu_Maddheshiya_Resume.pdf";
     document.body.appendChild(link);
     link.click();

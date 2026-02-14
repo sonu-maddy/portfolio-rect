@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-600 text-gray-300 mt-20">
+    <footer className="bg-gray-600 text-gray-300 ">
 
       {/* ===== TOP CTA ===== */}
 
@@ -13,24 +13,16 @@ export default function Footer() {
         whileInView={{ opacity: 1, y: 0 }}
         className="max-w-6xl mx-auto px-6 py-16 border-b border-gray-700 text-center"
       >
-        <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+        <h2 className="text-2xl md:text-3xl font-bold text-white">
           Let’s Build Something Meaningful
         </h2>
 
-        <p className="max-w-2xl mx-auto text-gray-400 mb-8">
+        <p className="max-w-2xl mx-auto text-gray-400 mt-2 ">
           Open to internships, freelance projects, and engineering
           collaborations focused on scalable systems.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-6">
-          <Link
-            to="/about"
-            className="px-8 py-3 bg-blue-600 text-white rounded hover:bg-blue-700"
-          >
-            Contact Me
-          </Link>
-
-        </div>
+       
       </motion.div>
 
       {/* ===== MAIN GRID ===== */}
@@ -151,7 +143,7 @@ export default function Footer() {
       {/* ===== BOTTOM ===== */}
 
       <div className="border-t border-gray-800 py-6 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} Sonu Maddheshiya — Built with React & Tailwind.
+        © {new Date().getFullYear()} <span className="text-white">Sonu Maddheshiya</span>— Built with React & Tailwind.
       </div>
 
     </footer>
