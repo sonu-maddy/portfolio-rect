@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import workspaceImg from "../assets/sonu-workspace.png";
 
 import { motion } from "framer-motion";
 import NavBar from "../NavBar";
@@ -85,7 +86,7 @@ export default function Home() {
           <div className="flex justify-center gap-6">
 
             <button
-              
+
               className="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700"
             >
               <a href="/project">View Projects</a>
@@ -184,16 +185,23 @@ export default function Home() {
 
             {/* RIGHT — preview placeholder */}
 
-            <div className="bg-white border rounded-xl p-10 text-center text-gray-500">
+            <div className="bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-xl p-10 text-center">
 
-              Workspace Dashboard Preview
-              <br />
+              <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+                Workspace Dashboard Preview
+              </h3>
 
-              <span className="text-sm">
-                (Architecture showcase / screenshots available on request)
-              </span>
+              <div className="mt-6">
+                <img
+                  src={workspaceImg}
+                  alt="Sonu Workspace Architecture"
+                  className="w-full rounded-xl border border-gray-300 dark:border-zinc-700 shadow-lg hover:scale-105 transition duration-300"
+                />
+              </div>
 
             </div>
+
+
 
           </div>
 
