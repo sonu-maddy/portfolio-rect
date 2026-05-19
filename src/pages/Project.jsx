@@ -58,6 +58,20 @@ export default function Project() {
       repo: "#",
     },
     {
+      title: "Watch Party App",
+      desc: "Real-time video synchronization platform where users can create or join rooms and watch videos together with live play, pause, and seek sync using WebSockets.",
+      tech: [
+        "React",
+        "Node.js",
+        "Express",
+        "Socket.IO",
+        "MongoDB",
+        "JWT",
+      ],
+      demo: "https://watch-party-socket-io.netlify.app/",
+      repo: "https://github.com/sonu-maddy/WATCH-PARTY-SOCKET-IO",
+    },
+    {
       title: "Portfolio System",
       desc: "Dynamic developer portfolio showcasing UI architecture and recruiter-focused presentation.",
       tech: ["React", "Tailwind", "EmailJS"],
