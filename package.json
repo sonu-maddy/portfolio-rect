@@ -12,6 +12,7 @@
     "cors": "^2.8.5",
     "emailjs-com": "^3.2.0",
     "express": "^5.1.0",
+    "framer-motion": "^12.42.2",
     "motion": "^12.23.9",
     "node-fetch": "^3.3.2",
     "react": "^19.1.0",
